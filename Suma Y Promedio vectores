@@ -1,0 +1,22 @@
+#include <stdio.h>
+#define MAX 5
+int vector [MAX];
+int main()
+{
+    
+//Bucle para pedir y guardar datos en el vector
+    for (int i=0; i<MAX; i++) {
+    printf("ingrese numero %d: ",i+1);
+    scanf("%d",&vector[i]);
+}
+//Inicializo variables
+    int SUMA;
+    float Promedio;
+//Sumo
+    SUMA= vector[0]+vector[1]+vector[2]+vector[3]+vector[4];
+    printf("la suma de los valores es:%d\n",SUMA);
+//Promedio los datos 
+    Promedio=(float)SUMA/5;
+    printf("el promedio de los valore es:%2.2f\n",Promedio);
+    return 0; 
+}
