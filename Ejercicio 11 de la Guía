@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+float var1, var2;
+printf("ingrese el valor de cm que desea convertir a pies:");
+scanf("%f" ,&var1);
+var2=var1/30.48;
+printf("el valor en pies es:%2.2f\n",var2);
+    return 0;
+}

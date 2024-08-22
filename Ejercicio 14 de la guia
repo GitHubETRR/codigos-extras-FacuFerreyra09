@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int Angulo1,Angulo2,Angulo3;
+    printf("ingrese el valor del primer angulo:\n");
+    scanf("%d",&Angulo1);
+    printf("ingrese el valor del segundo angulo:\n"); 
+    scanf("%d",&Angulo2);
+    Angulo3=180-(Angulo1+Angulo2);
+    printf("el angulo de faltante es de:%d",Angulo3);
+    return 0;
+}
