@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int kilo,precio,pan=3;
+    printf("ingresa la cantidad de pan que desea comprar\n");
+    scanf("%d",&kilo);
+    precio=kilo*pan;
+    printf("usted abona:%d",precio);
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+//pedir los segundos a convertir e inicializo variables ademas de usar do-while por si el numero es mayor a 86400 entonces no lo tome
+    int segundos,minutos,horas;
+    do {
+        printf("ingrese la cantidad de segundos que desea convertir:");
+        scanf("%d",&segundos);
+        if (86400<segundos){;
+            printf("no se permite un numero mayor a 86400 \n");
+        } 
+    } while(86400<segundos);
+//convertir a min y luego segundos nuevamente
+    minutos=segundos/60;
+    segundos=segundos%60;
+//convertir a horas
+    horas=minutos/60;
+    minutos= minutos%60;
+//mostar los resultados
+    printf("equivale a:  %02dhoras, %02dminutos, %02dsegundos",horas,minutos,segundos);
+    return 0;
+}

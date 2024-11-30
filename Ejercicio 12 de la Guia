@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int var1, var2;
+    printf("ingrese su edad:\n");
+    scanf("%d",&var1);
+    var2=var1*365;
+    printf("la cantidad de dias vividos son:%d\n",var2);
+    return 0;
+}
